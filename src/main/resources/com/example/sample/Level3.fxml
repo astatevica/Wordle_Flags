@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="scenePane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="806.0" style="-fx-background-color: #1b0236;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.LevelController">
+<AnchorPane fx:id="scenePane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="806.0" style="-fx-background-color: #1b0236;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.LevelController">
    <children>
       <HBox layoutX="151.0" layoutY="95.0" prefHeight="44.0" prefWidth="783.0">
          <children>
             <ImageView fx:id="word1Letter1" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
                </HBox.margin></ImageView>
             <ImageView fx:id="word1Letter2" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -32,7 +28,7 @@
             </ImageView>
             <ImageView fx:id="word1Letter3" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -40,7 +36,7 @@
             </ImageView>
             <ImageView fx:id="word1Letter4" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -48,7 +44,7 @@
             </ImageView>
             <ImageView fx:id="word1Letter5" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -56,7 +52,7 @@
             </ImageView>
             <ImageView fx:id="word1Letter6" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -64,7 +60,7 @@
             </ImageView>
             <ImageView fx:id="word1Letter7" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -104,7 +100,7 @@
          <children>
             <ImageView fx:id="word2Letter1" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -112,7 +108,7 @@
             </ImageView>
             <ImageView fx:id="word2Letter2" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -120,7 +116,7 @@
             </ImageView>
             <ImageView fx:id="word2Letter3" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -128,7 +124,7 @@
             </ImageView>
             <ImageView fx:id="word2Letter4" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -136,7 +132,7 @@
             </ImageView>
             <ImageView fx:id="word2Letter5" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -144,7 +140,7 @@
             </ImageView>
             <ImageView fx:id="word2Letter6" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -152,7 +148,7 @@
             </ImageView>
             <ImageView fx:id="word2Letter7" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -164,7 +160,7 @@
          <children>
             <ImageView fx:id="word3Letter1" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -172,7 +168,7 @@
             </ImageView>
             <ImageView fx:id="word3Letter2" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -180,7 +176,7 @@
             </ImageView>
             <ImageView fx:id="word3Letter3" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -188,7 +184,7 @@
             </ImageView>
             <ImageView fx:id="word3Letter4" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -196,7 +192,7 @@
             </ImageView>
             <ImageView fx:id="word3Letter5" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -204,7 +200,7 @@
             </ImageView>
             <ImageView fx:id="word3Letter6" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -212,7 +208,7 @@
             </ImageView>
             <ImageView fx:id="word3Letter7" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -224,7 +220,7 @@
          <children>
             <ImageView fx:id="word4Letter1" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -232,7 +228,7 @@
             </ImageView>
             <ImageView fx:id="word4Letter2" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -240,7 +236,7 @@
             </ImageView>
             <ImageView fx:id="word4Letter3" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -248,7 +244,7 @@
             </ImageView>
             <ImageView fx:id="word4Letter4" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -256,7 +252,7 @@
             </ImageView>
             <ImageView fx:id="word4Letter5" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -264,7 +260,7 @@
             </ImageView>
             <ImageView fx:id="word4Letter6" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -272,7 +268,7 @@
             </ImageView>
             <ImageView fx:id="word4Letter7" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -284,7 +280,7 @@
          <children>
             <ImageView fx:id="word5Letter1" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -292,7 +288,7 @@
             </ImageView>
             <ImageView fx:id="word5Letter2" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -300,7 +296,7 @@
             </ImageView>
             <ImageView fx:id="word5Letter3" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -308,7 +304,7 @@
             </ImageView>
             <ImageView fx:id="word5Letter4" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -316,7 +312,7 @@
             </ImageView>
             <ImageView fx:id="word5Letter5" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -324,7 +320,7 @@
             </ImageView>
             <ImageView fx:id="word5Letter6" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -332,7 +328,7 @@
             </ImageView>
             <ImageView fx:id="word5Letter7" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -344,7 +340,7 @@
          <children>
             <ImageView fx:id="word6Letter1" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -352,7 +348,7 @@
             </ImageView>
             <ImageView fx:id="word6Letter2" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -360,7 +356,7 @@
             </ImageView>
             <ImageView fx:id="word6Letter3" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -368,7 +364,7 @@
             </ImageView>
             <ImageView fx:id="word6Letter4" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -376,7 +372,7 @@
             </ImageView>
             <ImageView fx:id="word6Letter5" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -384,7 +380,7 @@
             </ImageView>
             <ImageView fx:id="word6Letter6" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -392,7 +388,7 @@
             </ImageView>
             <ImageView fx:id="word6Letter7" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/default.jpg" />
+                  <Image url="@../../../PictureOfLetters/default.jpg" />
                </image>
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -418,132 +414,132 @@
          <children>
             <ImageView fx:id="a1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/A_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/A_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="b1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/B_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/B_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="c1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/C_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/C_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="d1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/D_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/D_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="e1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/E_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/E_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="f1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/F_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/F_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="g1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/G_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/G_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="h1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/H_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/H_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="i1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/I_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/I_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="j1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/J_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/J_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="k1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/K_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/K_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="l1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/L_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/L_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="m1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/M_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/M_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="n1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/N_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/N_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="o1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/O_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/O_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="p1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/P_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/P_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="q1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/Q_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/Q_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="r1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/R_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/R_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="s1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/S_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/S_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="t1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/T_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/T_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="u1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/U_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/U_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="v1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/V_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/V_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="w1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/W_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/W_default.jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" fx:id="x1box">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/X_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/X_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="y1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/Y_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/Y_default.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="z1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kdGUI/src/kdGUI/PictureOfLetters/Z_default.jpg" />
+                  <Image url="@../../../PictureOfLetters/Z_default.jpg" />
                </image>
             </ImageView>
          </children>
