@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="389.0" prefWidth="621.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.FlagsLeaderboardController">
+   <children>
+      <Label fx:id="lb_score" contentDisplay="CENTER" layoutX="139.0" layoutY="34.0" prefHeight="51.0" prefWidth="342.0" text="Your score: X/10" textFill="#8328cc">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="36.0" />
+         </font>
+         <effect>
+            <Glow level="0.79" />
+         </effect>
+      </Label>
+      <Label layoutX="124.0" layoutY="96.0" prefHeight="35.0" prefWidth="158.0" text="Last 5 scores" textFill="#8328cc">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_scoresFromDB" layoutX="87.0" layoutY="132.0" prefHeight="183.0" prefWidth="217.0" style="-fx-background-color: #be6ff7;" text="Scores from DB">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="96.0" prefHeight="35.0" prefWidth="169.0" text="Time of game" textFill="#8328cc">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_timesFromDB" layoutX="305.0" layoutY="132.0" prefHeight="183.0" prefWidth="218.0" style="-fx-background-color: #dda1ff;" text="Times from DB">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
