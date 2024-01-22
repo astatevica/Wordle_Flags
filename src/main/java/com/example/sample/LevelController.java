@@ -100,7 +100,7 @@ public class LevelController {
         if (level.equals("Level 1")){
             try {
                 //Count how many words are in the list with code
-                // BufferedReader reader = new BufferedReader(new FileReader("src\\kdGUI\\words\\5letterWords.txt"));
+                // BufferedReader reader = new BufferedReader(new FileReader("src\\resources\\words\\5letterWords.txt"));
 
                 // int lineCount = 0;
                 // while(reader.readLine() != null){
@@ -112,7 +112,7 @@ public class LevelController {
 
                 int secretWordLocation = rand.nextInt(1, lineCount);
 
-                BufferedReader reader = new BufferedReader(new FileReader("src\\kdGUI\\words\\5letterWords.txt"));
+                BufferedReader reader = new BufferedReader(new FileReader("src\\resources\\words\\5letterWords.txt"));
                 lineCount = 0;
                 while(lineCount != secretWordLocation){
                     secretWord = reader.readLine().toUpperCase();
@@ -127,7 +127,7 @@ public class LevelController {
 
         }else if(level.equals("Level 2")){
             try {
-                // BufferedReader reader = new BufferedReader(new FileReader("src\\kdGUI\\words\\6letterWords.txt"));
+                // BufferedReader reader = new BufferedReader(new FileReader("src\\resources\\words\\6letterWords.txt"));
 
                 // int lineCount = 0;
                 // while(reader.readLine() != null){
@@ -139,7 +139,7 @@ public class LevelController {
 
                 int secretWordLocation = rand.nextInt(1, lineCount);
 
-                BufferedReader reader = new BufferedReader(new FileReader("src\\kdGUI\\words\\6letterWords.txt"));
+                BufferedReader reader = new BufferedReader(new FileReader("src\\resources\\words\\6letterWords.txt"));
                 lineCount = 0;
                 while(lineCount != secretWordLocation){
                     secretWord = reader.readLine().toUpperCase();
@@ -154,7 +154,7 @@ public class LevelController {
 
         }else if(level.equals("Level 3")){
             try {
-                // BufferedReader reader = new BufferedReader(new FileReader("src\\kdGUI\\words\\7letterWords.txt"));
+                // BufferedReader reader = new BufferedReader(new FileReader("src\\resources\\words\\7letterWords.txt"));
 
                 // int lineCount = 0;
                 // while(reader.readLine() != null){
@@ -166,7 +166,7 @@ public class LevelController {
 
                 int secretWordLocation = rand.nextInt(1, lineCount);
 
-                BufferedReader reader = new BufferedReader(new FileReader("src\\kdGUI\\words\\7letterWords.txt"));
+                BufferedReader reader = new BufferedReader(new FileReader("src\\resources\\words\\7letterWords.txt"));
                 lineCount = 0;
                 while(lineCount != secretWordLocation){
                     secretWord = reader.readLine().toUpperCase();

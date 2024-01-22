@@ -58,6 +58,13 @@ public class LoggedInController implements Initializable {
         loadPicture("wordle_game",im_wordle);
 
         lable_welcome.setText("Choose game!");
+
+        button_wordle.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                DBUtils.changeScene(event, "LevelSelector.fxml", "Wordle", null);
+            }
+        });
     }
 
     //parādīs kas ir ielogojies

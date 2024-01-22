@@ -97,6 +97,7 @@ public class LevelSelectorController{
         primaryStage.show();
     }
 
+    //TODO iespējot pogu
     @FXML
     public void backLevelSelector(ActionEvent event) {
         primaryStage = (Stage) levelSelectorPane.getScene().getWindow();   
