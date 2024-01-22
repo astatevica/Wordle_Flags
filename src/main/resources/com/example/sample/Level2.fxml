@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="806.0" style="-fx-background-color: #1b0236;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kdGUI.LevelController">
+   <children>
+      <HBox layoutX="96.0" layoutY="114.0" prefHeight="100.0" prefWidth="783.0">
+         <children>
+            <ImageView fx:id="word1Letter1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="word1Letter2" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word1Letter3" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word1Letter4" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word1Letter5" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word1Letter6" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label fx:id="levelLabel1" layoutX="395.0" layoutY="36.0" prefHeight="37.0" prefWidth="75.0" text="Level 2" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="wordleLabel1" layoutX="312.0" layoutY="37.0" prefHeight="35.0" prefWidth="83.0" text="Wordle" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="doneGameButton1" layoutX="379.0" layoutY="806.0" mnemonicParsing="false" onAction="#doneGame1" text="DONE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="enterWordLabel1" layoutX="196.0" layoutY="72.0" prefHeight="35.0" prefWidth="100.0" text="Enter Word:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answerBox1" layoutX="296.0" layoutY="77.0" prefHeight="25.0" prefWidth="174.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Button fx:id="submitButton1" layoutX="470.0" layoutY="77.0" mnemonicParsing="false" onAction="#submitAnswer1" text="SUBMIT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <HBox layoutX="96.0" layoutY="216.0" prefHeight="100.0" prefWidth="783.0">
+         <children>
+            <ImageView fx:id="word2Letter1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word2Letter2" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word2Letter3" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word2Letter4" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word2Letter5" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word2Letter6" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="96.0" layoutY="318.0" prefHeight="100.0" prefWidth="783.0">
+         <children>
+            <ImageView fx:id="word3Letter1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word3Letter2" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word3Letter3" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word3Letter4" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word3Letter5" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word3Letter6" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="96.0" layoutY="420.0" prefHeight="100.0" prefWidth="783.0">
+         <children>
+            <ImageView fx:id="word4Letter1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word4Letter2" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word4Letter3" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word4Letter4" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word4Letter5" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word4Letter6" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="96.0" layoutY="522.0" prefHeight="100.0" prefWidth="783.0">
+         <children>
+            <ImageView fx:id="word5Letter1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word5Letter2" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word5Letter3" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word5Letter4" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word5Letter5" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word5Letter6" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="96.0" layoutY="624.0" prefHeight="100.0" prefWidth="783.0">
+         <children>
+            <ImageView fx:id="word6Letter1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word6Letter2" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word6Letter3" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word6Letter4" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word6Letter5" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="word6Letter6" fitHeight="122.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/default.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label fx:id="resultMessage1" alignment="CENTER" layoutX="295.0" layoutY="726.0" prefHeight="19.0" prefWidth="217.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="forfeitButton1" layoutX="742.0" layoutY="806.0" mnemonicParsing="false" onAction="#forfeit1" prefHeight="25.0" prefWidth="64.0" text="FORFEIT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="resultMessage11" alignment="CENTER" layoutX="295.0" layoutY="756.0" prefHeight="19.0" prefWidth="217.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="37.0" prefWidth="815.0">
+         <children>
+            <ImageView fx:id="a1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/A_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="b1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/B_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="c1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/C_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="d1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/D_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="e1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/E_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="f1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/F_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="g1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/G_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="h1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/H_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="i1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/I_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="j1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/J_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="k1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/K_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="l1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/L_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/M_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="n1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/N_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="o1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/O_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/P_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="q1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/Q_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="r1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/R_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="s1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/S_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="t1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/T_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="u1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/U_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="v1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/V_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="w1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/W_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" fx:id="x1box">
+               <image>
+                  <Image url="@PictureOfLetters/X_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="y1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/Y_default.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="z1box" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PictureOfLetters/Z_default.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="levelSelectorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="806.0" style="-fx-background-color: #1b0236;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kdGUI.LevelSelectorController">
+   <children>
+      <Button fx:id="buttonLVL1" layoutX="221.0" layoutY="186.0" mnemonicParsing="false" onAction="#openLevel1" prefHeight="132.0" prefWidth="373.0" style="-fx-background-color: #8328CC;" text="LEVEL 1" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="58.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="buttonLVL2" layoutX="221.0" layoutY="375.0" mnemonicParsing="false" onAction="#openLevel2" prefHeight="132.0" prefWidth="373.0" style="-fx-background-color: #8328CC;" text="LEVEL 2" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="58.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="buttonLVL3" layoutX="222.0" layoutY="564.0" mnemonicParsing="false" onAction="#openLevel3" prefHeight="132.0" prefWidth="373.0" style="-fx-background-color: #8328CC;" text="LEVEL 3" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="58.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backLevelSelectorButton" layoutX="381.0" layoutY="801.0" mnemonicParsing="false" onAction="#backLevelSelector" prefHeight="31.0" prefWidth="53.0" style="-fx-background-color: #8328CC;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="TOP_CENTER" layoutX="282.0" prefHeight="144.0" prefWidth="252.0" text="Wordle" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
