@@ -1,8 +1,11 @@
 package com.example.sample;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -97,12 +100,11 @@ public class LevelSelectorController{
         primaryStage.show();
     }
 
-    //TODO iespējot pogu
     @FXML
     public void backLevelSelector(ActionEvent event) {
-        primaryStage = (Stage) levelSelectorPane.getScene().getWindow();   
-        primaryStage.close();
+        DBUtils.changeScene(event,"logged-in.fxml", "Welcome!", null);
     }
+
 
 
 
