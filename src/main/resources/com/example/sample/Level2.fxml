@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="scenePane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="806.0" style="-fx-background-color: #1b0236;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.LevelController">
+<AnchorPane fx:id="scenePane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="806.0" style="-fx-background-color: #1b0236;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.LevelController">
    <children>
       <HBox layoutX="186.0" layoutY="95.0" prefHeight="70.0" prefWidth="783.0">
          <children>
@@ -70,7 +70,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="doneGameButton1" layoutX="379.0" layoutY="530.0" mnemonicParsing="false" onAction="#doneGame1" text="DONE">
+      <Button fx:id="doneGameButton1" layoutX="379.0" layoutY="595.0" mnemonicParsing="false" onAction="#doneGame1" text="DONE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
@@ -347,16 +347,16 @@
             </ImageView>
          </children>
       </HBox>
-      <Label fx:id="resultMessage1" alignment="CENTER" layoutX="295.0" layoutY="726.0" prefHeight="19.0" prefWidth="217.0" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="resultMessage1" alignment="CENTER" layoutX="294.0" layoutY="527.0" prefHeight="19.0" prefWidth="217.0" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Button fx:id="forfeitButton1" layoutX="742.0" layoutY="530.0" mnemonicParsing="false" onAction="#forfeit1" prefHeight="25.0" prefWidth="64.0" text="FORFEIT">
+      <Button fx:id="forfeitButton1" layoutX="742.0" layoutY="595.0" mnemonicParsing="false" onAction="#forfeit1" prefHeight="25.0" prefWidth="64.0" text="FORFEIT">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Label fx:id="resultMessage11" alignment="CENTER" layoutX="295.0" layoutY="756.0" prefHeight="19.0" prefWidth="217.0" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="resultMessage11" alignment="CENTER" layoutX="294.0" layoutY="557.0" prefHeight="19.0" prefWidth="217.0" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
