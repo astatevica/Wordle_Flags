@@ -3,6 +3,7 @@ package com.example.sample;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -112,7 +113,7 @@ public class LevelController {
 
                 int secretWordLocation = rand.nextInt(1, lineCount);
 
-                BufferedReader reader = new BufferedReader(new FileReader("src\\resources\\words\\5letterWords.txt"));
+                BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/words/5letterWords.txt"));
                 lineCount = 0;
                 while(lineCount != secretWordLocation){
                     secretWord = reader.readLine().toUpperCase();
@@ -139,7 +140,7 @@ public class LevelController {
 
                 int secretWordLocation = rand.nextInt(1, lineCount);
 
-                BufferedReader reader = new BufferedReader(new FileReader("src\\resources\\words\\6letterWords.txt"));
+                BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/words/6letterWords.txt"));
                 lineCount = 0;
                 while(lineCount != secretWordLocation){
                     secretWord = reader.readLine().toUpperCase();
@@ -166,7 +167,7 @@ public class LevelController {
 
                 int secretWordLocation = rand.nextInt(1, lineCount);
 
-                BufferedReader reader = new BufferedReader(new FileReader("src\\resources\\words\\7letterWords.txt"));
+                BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/words/7letterWords.txt"));
                 lineCount = 0;
                 while(lineCount != secretWordLocation){
                     secretWord = reader.readLine().toUpperCase();
@@ -332,19 +333,19 @@ public class LevelController {
     //Wordle user guess letter coloring
     public void displayColoredLetters1(ArrayList<String> lettersWithColors){
         
-        Image letterOne = new Image(getClass().getResourceAsStream("PictureOfLetters/" + lettersWithColors.get(0) +".jpg"));
-        Image letterTwo = new Image(getClass().getResourceAsStream("PictureOfLetters/" + lettersWithColors.get(1) +".jpg"));
-        Image letterThree = new Image(getClass().getResourceAsStream("PictureOfLetters/" + lettersWithColors.get(2) +".jpg"));
-        Image letterFour = new Image(getClass().getResourceAsStream("PictureOfLetters/" + lettersWithColors.get(3) +".jpg"));
-        Image letterFive = new Image(getClass().getResourceAsStream("PictureOfLetters/" + lettersWithColors.get(4) +".jpg"));
-        Image letterSix = new Image(getClass().getResourceAsStream("PictureOfLetters/default.jpg"));
-        Image letterSeven = new Image(getClass().getResourceAsStream("PictureOfLetters/default.jpg"));
+        Image letterOne = new Image(getClass().getResourceAsStream("/PictureOfLetters/" + lettersWithColors.get(0) +".jpg"));
+        Image letterTwo = new Image(getClass().getResourceAsStream("/PictureOfLetters/" + lettersWithColors.get(1) +".jpg"));
+        Image letterThree = new Image(getClass().getResourceAsStream("/PictureOfLetters/" + lettersWithColors.get(2) +".jpg"));
+        Image letterFour = new Image(getClass().getResourceAsStream("/PictureOfLetters/" + lettersWithColors.get(3) +".jpg"));
+        Image letterFive = new Image(getClass().getResourceAsStream("/PictureOfLetters/" + lettersWithColors.get(4) +".jpg"));
+        Image letterSix = new Image(getClass().getResourceAsStream("/PictureOfLetters/default.jpg"));
+        Image letterSeven = new Image(getClass().getResourceAsStream("/PictureOfLetters/default.jpg"));
 
         if(secretWord.length() >= 6){
-            letterSix = new Image(getClass().getResourceAsStream("PictureOfLetters/" + lettersWithColors.get(5) +".jpg"));
+            letterSix = new Image(getClass().getResourceAsStream("/PictureOfLetters/" + lettersWithColors.get(5) +".jpg"));
         }
         if(secretWord.length() >= 7){
-            letterSeven = new Image(getClass().getResourceAsStream("PictureOfLetters/" + lettersWithColors.get(6) +".jpg"));
+            letterSeven = new Image(getClass().getResourceAsStream("/PictureOfLetters/" + lettersWithColors.get(6) +".jpg"));
         }
 
         ArrayList <Image> gameLetterImageList = new ArrayList<Image>();
@@ -406,7 +407,7 @@ public class LevelController {
                     lettersWithColors.get(i).equals(a.get(1)) && !greenLetters.contains(lettersWithColors.get(i).charAt(0)) || 
                     lettersWithColors.get(i).equals(a.get(2))){
 
-                        Image letter = new Image(getClass().getResourceAsStream("PictureOfLetters/" + lettersWithColors.get(i) +".jpg"));
+                        Image letter = new Image(getClass().getResourceAsStream("/PictureOfLetters/" + lettersWithColors.get(i) +".jpg"));
                         topLetters.get(j).setImage(letter);
                     }
                 }

@@ -79,7 +79,7 @@ public class FlagGameController implements Initializable {
         if(rounds<10) {
 
             //Izveidoju visas valstis
-            AllCountries allCountries = new AllCountries();
+            GameFlag allCountries = new GameFlag();
 
             //Paprasu, lai iedod spēles mainīgos
             Country answer = allCountries.giveOneCountry();

@@ -1,11 +1,9 @@
 package com.example.sample;
 
-import com.example.sample.Country;
-
 import java.util.ArrayList;
 import java.util.Random;
 
-public class AllCountries {
+public class GameFlag {
     //1.mainīgie
     private ArrayList<Country> country = new ArrayList<Country>();
 
@@ -17,7 +15,7 @@ public class AllCountries {
     //3.set - nevajag, jo neko neievadīs neviens
 
     //4.Konstruktori
-    public AllCountries(){
+    public GameFlag(){
         //izveidosim visu karogu kopumu
         createAllCountries();
         //samaisīsim karogus, lai katrā nākamajā spēlē tie nebūtu vienādi

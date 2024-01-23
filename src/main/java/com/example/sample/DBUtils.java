@@ -44,7 +44,7 @@ public class DBUtils {
         // (events ir klikšķis --> iegūst avotu) --> iegūst skatu un atver logu
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle(title);
-        stage.setScene(new Scene(root, 600, 400));
+        stage.setScene(new Scene(root));
         stage.show();
 
     }

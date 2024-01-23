@@ -50,9 +50,6 @@ public class LevelSelectorController{
         primaryStage.show();
 
     }
-    
-
-
 
     @FXML
     public void openLevel2(ActionEvent event) throws IOException{
