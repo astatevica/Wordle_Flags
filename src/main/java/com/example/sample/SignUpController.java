@@ -1,5 +1,6 @@
 package com.example.sample;
 
+import Model.Player;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -30,8 +31,6 @@ public class SignUpController implements Initializable {
 
     @FXML
     private TextField tf_email;
-
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

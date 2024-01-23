@@ -1,5 +1,6 @@
 package com.example.sample;
 
+import Model.Player;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -54,6 +55,9 @@ public class DBUtils {
         PreparedStatement psInsert = null;
         PreparedStatement psCheckUserExists = null;
         ResultSet resultSet = null;
+
+        Player player = new Player(username,email,password);
+        System.out.println(player);
 
 
         try{
@@ -117,6 +121,10 @@ public class DBUtils {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
+
+        Player player = new Player(username,null,password);
+        System.out.println(player);
+
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/wordle_2023","root","edann130822");
             preparedStatement = connection.prepareStatement("SELECT password, email FROM user_information WHERE username = ? ");

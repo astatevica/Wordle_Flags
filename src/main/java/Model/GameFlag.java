@@ -1,9 +1,11 @@
-package com.example.sample;
+package Model;
+
+import Model.Country;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public class GameFlag {
+public class GameFlag extends Game{
     //1.mainīgie
     private ArrayList<Country> country = new ArrayList<Country>();
 

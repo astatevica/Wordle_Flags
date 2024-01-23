@@ -6,4 +6,6 @@ module com.example.sample{
 
     opens com.example.sample to javafx.fxml;
     exports com.example.sample;
-    }
+    exports Model;
+    opens Model to javafx.fxml;
+}

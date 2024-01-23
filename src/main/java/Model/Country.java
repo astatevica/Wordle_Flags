@@ -1,4 +1,4 @@
-package com.example.sample;
+package Model;
 
 public enum Country {
     Albania, Andorra, Armenia, Austria, Azerbaijan, Belarus, Belgium,Bosnia,Bulgaria,Croatia,Cyprus,Czechia,
