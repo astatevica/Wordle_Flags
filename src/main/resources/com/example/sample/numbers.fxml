@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="361.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.NumbersController">
+   <children>
+      <VBox layoutX="20.0" layoutY="87.0" prefHeight="280.0" prefWidth="324.0">
+         <children>
+            <HBox prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: violet;">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="108.0" text="Guess">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="43.0" prefWidth="108.0" style="-fx-region-border: black;" text="Digits">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="44.0" prefWidth="108.0" text="Position">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: trasparent;">
+               <children>
+                  <Label fx:id="lb_guess1" prefHeight="39.0" prefWidth="108.0" style="-fx-background-color: trasparent;">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_digits1" prefHeight="43.0" prefWidth="108.0" style="-fx-region-border: black;">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_position1" prefHeight="44.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="49.0" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: trasparent;">
+               <children>
+                  <Label fx:id="lb_guess2" prefHeight="39.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_digits2" prefHeight="43.0" prefWidth="108.0" style="-fx-region-border: black;">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_position2" prefHeight="44.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="88.0" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: trasparent;">
+               <children>
+                  <Label fx:id="lb_guess3" prefHeight="39.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_digits3" prefHeight="43.0" prefWidth="108.0" style="-fx-region-border: black;">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_position3" prefHeight="44.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="128.0" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: trasparent;">
+               <children>
+                  <Label fx:id="lb_guess4" prefHeight="39.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_digits4" prefHeight="43.0" prefWidth="108.0" style="-fx-region-border: black;">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_position4" prefHeight="44.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="167.0" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: trasparent;">
+               <children>
+                  <Label fx:id="lb_guess5" prefHeight="39.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_digits5" prefHeight="43.0" prefWidth="108.0" style="-fx-region-border: black;">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_position5" prefHeight="44.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="206.0" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: trasparent;">
+               <children>
+                  <Label fx:id="lb_guess6" prefHeight="39.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_digits6" prefHeight="43.0" prefWidth="108.0" style="-fx-region-border: black;">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_position6" prefHeight="44.0" prefWidth="108.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TextField fx:id="tf_digits" layoutX="98.0" layoutY="34.0" promptText="Type some numbers">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="button_submit" layoutX="263.0" layoutY="34.0" mnemonicParsing="false" style="-fx-background-color: #8328CC;" text="SUBMIT" textFill="#fffefe">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="44.0" layoutY="359.0" prefHeight="26.0" prefWidth="250.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_choice" layoutX="14.0" layoutY="34.0" prefHeight="26.0" prefWidth="83.0">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,6 +1,5 @@
 package com.example.sample;
 
-import Model.Player;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

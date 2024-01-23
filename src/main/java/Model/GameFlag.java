@@ -1,7 +1,5 @@
 package Model;
 
-import Model.Country;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -18,6 +16,7 @@ public class GameFlag extends Game{
 
     //4.Konstruktori
     public GameFlag(){
+        super();
         //izveidosim visu karogu kopumu
         createAllCountries();
         //samaisīsim karogus, lai katrā nākamajā spēlē tie nebūtu vienādi

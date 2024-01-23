@@ -67,6 +67,9 @@ public class FlagGameController implements Initializable {
     }
 
     public void startGame(){
+        GameFlag gameFlag = new GameFlag();
+        System.out.println(gameFlag);
+
         //Atlieku defoltajās vietās un krāsās pogas
         button_play.setLayoutX(219);
         button_play.setLayoutY(355);

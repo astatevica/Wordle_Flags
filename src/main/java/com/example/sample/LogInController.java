@@ -1,6 +1,5 @@
 package com.example.sample;
 
-import Model.Player;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -31,11 +30,12 @@ public class LogInController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        DBUtils.registerHistory(tf_username.getText());
+
     //set button on action
         button_login.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                DBUtils.registerHistory(tf_username.getText());
                 DBUtils.logInUser(event,tf_username.getText(),tf_password.getText());
 
             }
