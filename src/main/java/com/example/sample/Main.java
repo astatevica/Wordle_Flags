@@ -1,6 +1,5 @@
 package com.example.sample;
 
-import Model.Player;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
