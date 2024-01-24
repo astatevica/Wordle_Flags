@@ -3,7 +3,7 @@ package Model;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class GameFlag extends Game{
+public class GameFlagFunctions {
     //1.mainīgie
     private ArrayList<Country> country = new ArrayList<Country>();
 
@@ -15,8 +15,7 @@ public class GameFlag extends Game{
     //3.set - nevajag, jo neko neievadīs neviens
 
     //4.Konstruktori
-    public GameFlag(){
-        super();
+    public GameFlagFunctions(){
         //izveidosim visu karogu kopumu
         createAllCountries();
         //samaisīsim karogus, lai katrā nākamajā spēlē tie nebūtu vienādi

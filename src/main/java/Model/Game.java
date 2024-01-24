@@ -3,22 +3,18 @@ package Model;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-public class Game {
+public class Game{
     //Mainigie
-    private Player player;
     private int guessesCount;
     private boolean winOrNot;
     private LocalDateTime date;
     private ArrayList<String> allGuesses;
+    private Player player;
 
     //test Array list for default constructor
     public ArrayList<String> testArrayList = new ArrayList<>();
 
     //Getters
-    public Player getPlayer() {
-        return player;
-    }
-
     public int getGuessesCount() {
         return guessesCount;
     }
@@ -35,15 +31,11 @@ public class Game {
         return allGuesses;
     }
 
-    //Setteri
-    public void setPlayer(Player inputPlayer){
-        if(inputPlayer != null){
-            player = inputPlayer;
-        }else{
-            player = new Player();
-        }
+    public Player getPlayer(){
+        return player;
     }
 
+    //Setteri
     public void setGuessesCount(int inputGuessesCount){
         if(inputGuessesCount >= 1){
             guessesCount = inputGuessesCount;
@@ -64,29 +56,33 @@ public class Game {
         winOrNot = inputWinOrNot;
     }
 
-    public void setLocalDateTime(LocalDateTime inputDate){
-        if(inputDate.isAfter(LocalDateTime.of(2023,10,20,12,30))){
-            date = inputDate;
+    public void setLocalDateTime(){
+        date = LocalDateTime.now();
+    }
+
+    public void setPlayer(Player inputPlayer){
+        if(inputPlayer != null){
+            player = inputPlayer;
         }else{
-            date = inputDate.of(2023,10,20,12,30);
+            player = new Player();
         }
     }
 
     //Konstruktori
     public Game(){
-        setPlayer(new Player());
         setGuessesCount(0);
         setAllGuesses(testArrayList);
         setWinOrNot(true);
-        setLocalDateTime(LocalDateTime.of(2023,11,20,11,43));
+        setLocalDateTime();
+        setPlayer(new Player());
     }
 
-    public Game(Player inputPlayer, int inputGuessesCount, ArrayList<String> inputAllGuesses, boolean inputWinOrNot, LocalDateTime inputDate){
-        setPlayer(inputPlayer);
+    public Game(int inputGuessesCount, ArrayList<String> inputAllGuesses, boolean inputWinOrNot, Player inputPlayer){
         setGuessesCount(inputGuessesCount);
         setAllGuesses(inputAllGuesses);
         setWinOrNot(inputWinOrNot);
-        setLocalDateTime(inputDate);
+        setLocalDateTime();
+        setPlayer(inputPlayer);
     }
 
     //toString

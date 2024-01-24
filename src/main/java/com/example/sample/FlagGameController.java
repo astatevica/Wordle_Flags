@@ -1,7 +1,7 @@
 package com.example.sample;
 
 import Model.Country;
-import Model.GameFlag;
+import Model.GameFlagFunctions;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -67,8 +67,6 @@ public class FlagGameController implements Initializable {
     }
 
     public void startGame(){
-        GameFlag gameFlag = new GameFlag();
-        System.out.println(gameFlag);
 
         //Atlieku defoltajās vietās un krāsās pogas
         button_play.setLayoutX(219);
@@ -84,7 +82,8 @@ public class FlagGameController implements Initializable {
         if(rounds<10) {
 
             //Izveidoju visas valstis
-            GameFlag allCountries = new GameFlag();
+            GameFlagFunctions allCountries = new GameFlagFunctions();
+            System.out.println(allCountries);
 
             //Paprasu, lai iedod spēles mainīgos
             Country answer = allCountries.giveOneCountry();

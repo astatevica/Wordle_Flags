@@ -3,7 +3,7 @@ package Model;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-public class GameWordle extends  Game{
+public class GameWordle extends Game{
     //variable
     private int level;
     private String secretWord;
@@ -41,9 +41,9 @@ public class GameWordle extends  Game{
         setSecretWord("APPLE");
     }
 
-    public GameWordle(Player inputPlayer, int inputGuessesCount, ArrayList<String> inputAllGuesses,
-                      boolean inputWinOrNot, LocalDateTime inputDate, int inputLevel, String inputSecretWord){
-        super(inputPlayer,inputGuessesCount,inputAllGuesses,inputWinOrNot,inputDate);
+    public GameWordle(int inputGuessesCount, ArrayList<String> inputAllGuesses,
+                      boolean inputWinOrNot, Player inputPlayer, int inputLevel, String inputSecretWord){
+        super(inputGuessesCount,inputAllGuesses,inputWinOrNot,inputPlayer);
         setLevel(inputLevel);
         setSecretWord(inputSecretWord);
     }

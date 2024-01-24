@@ -20,6 +20,7 @@ public class Player {
 
     //Setteri
     // && inputName.length() >= 3 && inputName.matches("[A-Za-z0-9]+")
+    //Šo pārbada pie DBUtils
     public void setName(String inputName) {
         if(inputName != null){
             name = inputName;
@@ -28,7 +29,8 @@ public class Player {
         }
     }
 
-    //TODO: Atrast pareizo regex (NEDER:[^[^\.\s][\w\-\.{2,}]+@([\w-]+\.)+[\w-]{2,}$])
+    //Atrast pareizo regex (NEDER:[^[^\.\s][\w\-\.{2,}]+@([\w-]+\.)+[\w-]{2,}$])
+    //Šo pārbada pie DBUtils
     public void setEmail(String inputEmail) {
         if(inputEmail != null && inputEmail.length() >= 5 ){
             email = inputEmail;
@@ -37,7 +39,7 @@ public class Player {
         }
     }
 
-    //TODO paroles regexu var uzlabot šis neder(^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$)
+    //paroles regexu var uzlabot šis neder(^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$)
     //inputPassword.length() >= 9
     public void setPassword(String inputPassword) {
         if(inputPassword != null){
