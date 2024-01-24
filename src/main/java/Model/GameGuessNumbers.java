@@ -31,11 +31,11 @@ public class GameGuessNumbers extends  Game{
         number = "1234";
     }
 
-    public GameGuessNumbers(Player inputPlayer, int inputGuessesCount, ArrayList<String> inputAllGuesses, boolean inputWinOrNot, LocalDateTime inputDate, int inputDigits){
-        super(inputPlayer,inputGuessesCount,inputAllGuesses,inputWinOrNot,inputDate);
-        digits = inputDigits;
-        number = ganerateNumber(digits);
-    }
+//    public GameGuessNumbers(Player inputPlayer, int inputGuessesCount, ArrayList<String> inputAllGuesses, boolean inputWinOrNot, int inputDigits){
+//        super(inputPlayer,inputGuessesCount,inputAllGuesses,inputWinOrNot);
+//        digits = inputDigits;
+//        number = ganerateNumber(digits);
+//    }
 
     //5.toString
     public String toString(){
