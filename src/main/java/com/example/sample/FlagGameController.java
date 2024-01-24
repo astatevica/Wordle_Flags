@@ -1,7 +1,6 @@
 package com.example.sample;
 
 import Model.Country;
-import Model.Game;
 import Model.GameFlagFunctions;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -64,6 +63,7 @@ public class FlagGameController implements Initializable {
             }
         });
 
+        //Iestatu skata sākumu
         setBeginingOfScene();
 
     }
@@ -80,6 +80,7 @@ public class FlagGameController implements Initializable {
         button_2.setStyle("-fx-background-color: #8328CC;");
         button_3.setStyle("-fx-background-color: #8328CC;");
         label_score.setText("Score: "+score);
+
         //ļauju spēlēt spēli 10 reizes
         if(rounds<10) {
 
@@ -89,34 +90,21 @@ public class FlagGameController implements Initializable {
 
             //Paprasu, lai iedod spēles mainīgos
             Country answer = allCountries.giveOneCountry();
-            allAnswers.add(answer.toString());
             Country extra1 = allCountries.giveOneRandomCountry();
             Country extra2 = allCountries.giveOneRandomCountry();
 
-            System.out.println(answer);
-            System.out.println(extra1);
-            System.out.println(extra2);
+            //Pievienoju atbildi atbilšu ArrayListam
+            allAnswers.add(answer.toString());
+
+            System.out.println("Atbilde ==> " + answer);
+            System.out.println("1. atbilžu variants ==> " +extra1);
+            System.out.println("2. atbilžu variants ==> " +extra2);
 
             //izveidoju karoga bildi;
-            try {
-                // Assuming "answer" is a valid value
-                String fileName = answer.toString() + ".png";
-                String filePath = "/flag_images/" + fileName;
+            Image imageForIm_flag = new Image(getClass().getResourceAsStream("/flag_images/" + answer.toString() +".png"));
+            image_flag.setImage(imageForIm_flag);
 
-                // Check if the file exists
-                InputStream inputStream = getClass().getResourceAsStream(filePath);
-                if (inputStream == null) {
-                    System.out.println("Error: Image file not found - " + fileName);
-                    // Handle the error as needed
-                } else {
-                    Image imageForIm_flag = new Image(inputStream);
-                    image_flag.setImage(imageForIm_flag);
-                }
-            } catch (Exception e) {
-                e.printStackTrace(); // Handle exceptions appropriately
-            }
-
-            //izveidoju atbilžu variantu array listu
+            //izveidoju atbilžu variantu array listu, lai to pēc tam sajauktu
             ArrayList<String> all_choices = new ArrayList<String>();
             System.out.println(all_choices);
             all_choices.add(answer.toString());
@@ -136,38 +124,19 @@ public class FlagGameController implements Initializable {
             button_1.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
-                    if (button_1.getText().equals(answer.toString())) {
-                        score++;
-                        label_score.setText("Score: " + score);
-                    }
-                    rounds++;
-                    allGuesses.add(button_1.getText());
-                    startGame();
-
+                    setScoreFromAnswers(button_1,answer);
                 }
             });
             button_2.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
-                    if (button_2.getText().equals(answer.toString())) {
-                        score++;
-                        label_score.setText("Score: " + score);
-                    }
-                    rounds++;
-                    allGuesses.add(button_2.getText());
-                    startGame();
+                    setScoreFromAnswers(button_2,answer);
                 }
             });
             button_3.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
-                    if (button_3.getText().equals(answer.toString())) {
-                        score++;
-                        label_score.setText("Score: " + score);
-                    }
-                    rounds++;
-                    allGuesses.add(button_3.getText());
-                    startGame();
+                    setScoreFromAnswers(button_3,answer);
                 }
             });
 
@@ -176,6 +145,7 @@ public class FlagGameController implements Initializable {
             //TODO nepieciešams pabeigt
             //saveResultsInDB(score);
 
+            //Izveido objektus
             SignUpController.makeGameObject(score,allGuesses,true);
             SignUpController.makeGameFlagObject(score,allGuesses,true,allAnswers);
 
@@ -191,15 +161,18 @@ public class FlagGameController implements Initializable {
                 e.printStackTrace();
             }
 
-            //ievieroju iegūto score DB
+            //ievietoju iegūto score DB
             String inputScore = String.valueOf(score);
             DBUtils.saveFlagGameResultsInDB(inputScore);
 
+            //atjaunoju mainīgo lielumus
             score = 0;
             rounds = 0;
+
+            //atjaunoju sākuma skatu spēlei
             setBeginingOfScene();
-            //Stage can give multiple scenes
-            // (events ir klikšķis --> iegūst avotu) --> iegūst skatu un atver logu
+
+            //Atveru jaunu logu, kur parādīsies FlagsLeaderboards
             Stage stage = new Stage();
             stage.setTitle("Flags Leaderboard!");
             stage.setScene(new Scene(root, 600, 400));
@@ -261,6 +234,16 @@ public class FlagGameController implements Initializable {
                 startGame();
             }
         });
+    }
+
+    public void setScoreFromAnswers(Button inputButton, Country inputAnswer){
+        if (inputButton.getText().equals(inputAnswer.toString())) {
+            score++;
+            label_score.setText("Score: " + score);
+        }
+        rounds++;
+        allGuesses.add(button_1.getText());
+        startGame();
     }
 
 

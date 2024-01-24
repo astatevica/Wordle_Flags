@@ -41,6 +41,7 @@ public class SignUpController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        //pievieno jauno lietotāju DB un veic pārbaudes
         button_signup.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -50,7 +51,6 @@ public class SignUpController implements Initializable {
                     if((pf_password.getText().trim().equals(pf_confirm_password.getText().trim()))) {
                         DBUtils.signUpUser(event, tf_username.getText(), pf_password.getText(), tf_email.getText());
                         DBUtils.registerHistory(tf_username.getText());
-
                     }else{
                         System.out.println("Password does not match!");
                         Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
@@ -66,6 +66,7 @@ public class SignUpController implements Initializable {
             }
         });
 
+        //pārslēdzas uz log-in skatu
         button_login.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -73,6 +74,7 @@ public class SignUpController implements Initializable {
             }
         });
 
+        //izveido player objektu
         player = new Player(tf_username.getText(),tf_email.getText(),pf_password.getText());
         System.out.println(player);
 
@@ -80,13 +82,14 @@ public class SignUpController implements Initializable {
 
 
     //Papildus funkcijas
-    //Izveidoju funkciju, lai varētu izveidot Game objektu
+
+    //Funkcija, lai varētu izveidot Game objektu
     public static void makeGameObject(int inputGuessesCount, ArrayList<String> inputAllGuesses, boolean inputWinOrNot){
         Game game = new Game(inputGuessesCount, inputAllGuesses, inputWinOrNot, player);
         System.out.println(game);
     }
 
-    //Izveidoju funkciju, lai varetu izveidot GameFlags objektu
+    //Funkcija, lai varētu izveidot GameFlags objektu
     public static void makeGameFlagObject(int inputGuessesCount, ArrayList<String> inputAllGuesses,
                                           boolean inputWinOrNot, ArrayList<String> inputAllAnswers){
         GameFlags gameFlags = new GameFlags(inputGuessesCount, inputAllGuesses, inputWinOrNot, player,inputAllAnswers);

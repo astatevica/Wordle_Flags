@@ -37,16 +37,15 @@ public class LoggedInController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        //Pārslēdz skatu no logged-in to sample
+        //Pārslēdz skatu no logged-in to log-in
         button_logout.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                //Daļa koda nāk no DBUtils
                 DBUtils.changeScene(event,"log-in.fxml","Log in!", null);
             }
         });
 
-        //Pārslēdz skatu no logged-in to flags
+        //Pārslēdz skatu no logged-in to Flags
         button_flags.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -54,24 +53,29 @@ public class LoggedInController implements Initializable {
             }
         });
 
-        loadPicture("flag_game",im_flags);
-        loadPicture("wordle_game",im_wordle);
-
-        lable_welcome.setText("Choose game!");
-
+        //Pārslēdzu skatu no logged-in to Wordle
         button_wordle.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 DBUtils.changeScene(event, "LevelSelector.fxml", "Wordle", null);
             }
         });
+
+        //Ieldēju fxml failā spēļu bildes
+        loadPicture("flag_game",im_flags);
+        loadPicture("wordle_game",im_wordle);
+
+        //Label pārsaucu
+        lable_welcome.setText("Choose game!");
+
     }
 
-    //parādīs kas ir ielogojies
+    //parādīs kas ir ielogojies logged-in.fxml skatā
     public void setUserInformation(String username){
         lable_welcome.setText("Welcome " + username + "!");
     }
 
+    //Funkcija, kas ielādē bildes
     public void loadPicture(String inputName, ImageView imageViewName) {
         try {
             String fileName = inputName + ".jpg";
