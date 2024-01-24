@@ -106,7 +106,6 @@ public class FlagGameController implements Initializable {
 
             //izveidoju atbilžu variantu array listu, lai to pēc tam sajauktu
             ArrayList<String> all_choices = new ArrayList<String>();
-            System.out.println(all_choices);
             all_choices.add(answer.toString());
             all_choices.add(extra1.toString());
             all_choices.add(extra2.toString());
@@ -241,6 +240,7 @@ public class FlagGameController implements Initializable {
             score++;
             label_score.setText("Score: " + score);
         }
+        System.out.println("Spēlētāja atbilde ==> " + inputButton.getText());
         rounds++;
         allGuesses.add(button_1.getText());
         startGame();

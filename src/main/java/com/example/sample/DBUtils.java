@@ -177,7 +177,6 @@ public class DBUtils {
         }
     }
 
-    //nereģistrē vēsturi
     public static void registerHistory(String username){
         Connection connection = null;
         PreparedStatement psInsert = null;
