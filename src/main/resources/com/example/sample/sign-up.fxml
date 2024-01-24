@@ -25,17 +25,7 @@
                         <Font name="Comic Sans MS" size="17.0" />
                     </font>
                 </TextField>
-                <TextField fx:id="tf_password" layoutX="167.0" layoutY="56.0" prefHeight="35.0" prefWidth="266.0" promptText="Password">
-                    <font>
-                        <Font name="Comic Sans MS" size="17.0" />
-                    </font>
-                </TextField>
-                <TextField fx:id="tf_confirm_password" layoutX="167.0" layoutY="100.0" prefHeight="35.0" prefWidth="266.0" promptText="Confirm password">
-                    <font>
-                        <Font name="Comic Sans MS" size="17.0" />
-                    </font>
-                </TextField>
-                <TextField fx:id="tf_email" layoutX="167.0" layoutY="145.0" prefHeight="35.0" prefWidth="266.0" promptText="Email">
+                <TextField fx:id="tf_email" layoutX="168.0" layoutY="145.0" prefHeight="35.0" prefWidth="266.0" promptText="Email">
                     <font>
                         <Font name="Comic Sans MS" size="17.0" />
                     </font>
@@ -55,6 +45,16 @@
                         <Font name="Comic Sans MS" size="14.0" />
                     </font>
                 </Button>
+            <PasswordField fx:id="pf_password" layoutX="167.0" layoutY="57.0" prefHeight="35.0" prefWidth="266.0" promptText="Password">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="pf_confirm_password" layoutX="167.0" layoutY="100.0" prefHeight="35.0" prefWidth="266.0" promptText="Confirm Password">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </PasswordField>
             </children></AnchorPane>
     </children>
 </VBox>

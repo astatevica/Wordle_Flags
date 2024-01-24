@@ -13,6 +13,7 @@ import java.sql.*;
 
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class DBUtils {
@@ -180,17 +181,18 @@ public class DBUtils {
 
     //nereģistrē vēsturi
     public static void registerHistory(String username){
-
         Connection connection = null;
         PreparedStatement psInsert = null;
 
+        Timestamp time = Timestamp.valueOf(LocalDateTime.now());
 
         try{
             //izveido savienojumu ar datu bāzi
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/wordle_2023","root","edann130822");
 
-            psInsert = connection.prepareStatement("INSERT INTO history (username) VALUES(?)");
+            psInsert = connection.prepareStatement("INSERT INTO history (username, RegTime) VALUES(?, ?)");
             psInsert.setString(1,username);
+            psInsert.setTimestamp(2,time);
             psInsert.executeUpdate();//for updating database
 
         }catch (SQLException e){

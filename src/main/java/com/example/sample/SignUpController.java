@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
@@ -23,10 +24,10 @@ public class SignUpController implements Initializable {
     private TextField tf_username;
 
     @FXML
-    private TextField tf_password;
+    private PasswordField pf_password;
 
     @FXML
-    private TextField tf_confirm_password;
+    private PasswordField pf_confirm_password;
 
     @FXML
     private TextField tf_email;
@@ -38,11 +39,11 @@ public class SignUpController implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 //parbauda vai username un password lauki ir aizpildīti
-                if(!tf_username.getText().trim().isEmpty() && !tf_password.getText().trim().isEmpty()){
+                if(!tf_username.getText().trim().isEmpty() && !pf_password.getText().trim().isEmpty()){
                     //pārbauda vai sakrīt paroles
-                    if((tf_password.getText().trim().equals(tf_confirm_password.getText().trim()))) {
+                    if((pf_password.getText().trim().equals(pf_confirm_password.getText().trim()))) {
                         DBUtils.registerHistory(tf_username.getText());
-                        DBUtils.signUpUser(event, tf_username.getText(), tf_password.getText(), tf_email.getText());
+                        DBUtils.signUpUser(event, tf_username.getText(), pf_password.getText(), tf_email.getText());
 
                     }else{
                         System.out.println("Password does not match!");
