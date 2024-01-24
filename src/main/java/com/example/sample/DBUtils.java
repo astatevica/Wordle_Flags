@@ -56,8 +56,6 @@ public class DBUtils {
         PreparedStatement psCheckUserExists = null;
         ResultSet resultSet = null;
 
-        Player player = new Player(username,email,password);
-        System.out.println(player);
 
 
         try{

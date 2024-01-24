@@ -1,6 +1,7 @@
 package com.example.sample;
 
 import Model.Country;
+import Model.Game;
 import Model.GameFlagFunctions;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -48,6 +49,8 @@ public class FlagGameController implements Initializable {
     //Nepieciešamie mainīgie
     int score = 0;
     int rounds = 0;
+    ArrayList<String> allGuesses = new ArrayList<String>();
+    ArrayList<String> allAnswers = new ArrayList<String>();
 
 
     @Override
@@ -62,7 +65,6 @@ public class FlagGameController implements Initializable {
         });
 
         setBeginingOfScene();
-
 
     }
 
@@ -87,6 +89,7 @@ public class FlagGameController implements Initializable {
 
             //Paprasu, lai iedod spēles mainīgos
             Country answer = allCountries.giveOneCountry();
+            allAnswers.add(answer.toString());
             Country extra1 = allCountries.giveOneRandomCountry();
             Country extra2 = allCountries.giveOneRandomCountry();
 
@@ -122,7 +125,7 @@ public class FlagGameController implements Initializable {
 
             //samaisu atbildes
             shuffleAnswers(all_choices);
-            System.out.println(all_choices);
+            //System.out.println(all_choices);
 
             //pogās ielieku tekstu
             button_1.setText(all_choices.get(0));
@@ -138,7 +141,9 @@ public class FlagGameController implements Initializable {
                         label_score.setText("Score: " + score);
                     }
                     rounds++;
+                    allGuesses.add(button_1.getText());
                     startGame();
+
                 }
             });
             button_2.setOnAction(new EventHandler<ActionEvent>() {
@@ -149,6 +154,7 @@ public class FlagGameController implements Initializable {
                         label_score.setText("Score: " + score);
                     }
                     rounds++;
+                    allGuesses.add(button_2.getText());
                     startGame();
                 }
             });
@@ -160,6 +166,7 @@ public class FlagGameController implements Initializable {
                         label_score.setText("Score: " + score);
                     }
                     rounds++;
+                    allGuesses.add(button_3.getText());
                     startGame();
                 }
             });
@@ -169,6 +176,8 @@ public class FlagGameController implements Initializable {
             //TODO nepieciešams pabeigt
             //saveResultsInDB(score);
 
+            SignUpController.makeGameObject(score,allGuesses,true);
+            SignUpController.makeGameFlagObject(score,allGuesses,true,allAnswers);
 
             //nomainīt skatu un ielādēt visu
             Parent root = null;

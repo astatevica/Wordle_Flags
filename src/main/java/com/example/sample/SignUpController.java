@@ -1,5 +1,8 @@
 package com.example.sample;
 
+import Model.Game;
+import Model.GameFlags;
+import Model.Player;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -10,6 +13,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class SignUpController implements Initializable {
@@ -32,6 +36,8 @@ public class SignUpController implements Initializable {
     @FXML
     private TextField tf_email;
 
+    private static Player player;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -40,10 +46,10 @@ public class SignUpController implements Initializable {
             public void handle(ActionEvent event) {
                 //parbauda vai username un password lauki ir aizpildīti
                 if(!tf_username.getText().trim().isEmpty() && !pf_password.getText().trim().isEmpty()){
-                    //pārbauda vai sakrīt paroles
+                    //pārbauda vai sakrīt paroles un reģistrē vēsturi un lietotāju
                     if((pf_password.getText().trim().equals(pf_confirm_password.getText().trim()))) {
-                        DBUtils.registerHistory(tf_username.getText());
                         DBUtils.signUpUser(event, tf_username.getText(), pf_password.getText(), tf_email.getText());
+                        DBUtils.registerHistory(tf_username.getText());
 
                     }else{
                         System.out.println("Password does not match!");
@@ -67,9 +73,25 @@ public class SignUpController implements Initializable {
             }
         });
 
+        player = new Player(tf_username.getText(),tf_email.getText(),pf_password.getText());
+        System.out.println(player);
+
     }
 
 
+    //Papildus funkcijas
+    //Izveidoju funkciju, lai varētu izveidot Game objektu
+    public static void makeGameObject(int inputGuessesCount, ArrayList<String> inputAllGuesses, boolean inputWinOrNot){
+        Game game = new Game(inputGuessesCount, inputAllGuesses, inputWinOrNot, player);
+        System.out.println(game);
+    }
+
+    //Izveidoju funkciju, lai varetu izveidot GameFlags objektu
+    public static void makeGameFlagObject(int inputGuessesCount, ArrayList<String> inputAllGuesses,
+                                          boolean inputWinOrNot, ArrayList<String> inputAllAnswers){
+        GameFlags gameFlags = new GameFlags(inputGuessesCount, inputAllGuesses, inputWinOrNot, player,inputAllAnswers);
+        System.out.println(gameFlags);
+    }
 
 
 }
