@@ -212,19 +212,29 @@ public class DBUtils {
         }
     }
 
-    //nereģistrē scorus
     public static void saveFlagGameResultsInDB(String inputScore){
         Connection connection = null;
         PreparedStatement psInsert = null;
+
+        Timestamp time = Timestamp.valueOf(LocalDateTime.now());
 
         //pagaidām pamēģinu tikai score ivadīt
         try{
             //izveido savienojumu ar datu bāzi
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/wordle_2023","root","edann130822");
-            //ievietoju datus DB
-            psInsert = connection.prepareStatement("INSERT INTO flag_leaderboard (score) VALUES(?)");
-            psInsert.setString(1,inputScore);
-            psInsert.executeUpdate();//for updating database
+            //izņemu datus no DB
+            Statement dbGet = connection.createStatement();
+            ResultSet getUsername = dbGet.executeQuery("SELECT username from history order by RegTime desc limit 1");
+            while (getUsername.next()) {
+                String username = getUsername.getString("username");
+                System.out.println(username);
+                //ievietoju datus DB
+                psInsert = connection.prepareStatement("INSERT INTO flag_leaderboard (username, score, time) VALUES(?, ?, ?)");
+                psInsert.setString(1,username);
+                psInsert.setString(2,inputScore);
+                psInsert.setTimestamp(3,time);
+                psInsert.executeUpdate();//for updating database
+            }
         }catch (SQLException e){
             e.printStackTrace();
         }finally {
