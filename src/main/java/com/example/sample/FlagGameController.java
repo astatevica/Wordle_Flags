@@ -130,8 +130,8 @@ public class FlagGameController implements Initializable {
         //Parādu rezultātu
         }else{
             //Izveido objektus
-            SignUpController.makeGameObject(score,allGuesses,true);
-            SignUpController.makeGameFlagObject(score,allGuesses,true,allAnswers);
+            SignUpController.makeGameObject(allGuesses,true);
+            SignUpController.makeGameFlagObject(allGuesses,true,allAnswers, score);
 
             //nomainīt skatu un ielādēt visu
             Parent root = null;

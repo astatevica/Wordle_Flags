@@ -5,23 +5,34 @@ import java.util.ArrayList;
 public class GameFlags extends Game{
     //1.mainīgie
     private ArrayList<String> allAnswers = new ArrayList<String>();
+    private int rightGuessesCount;
 
     //2.getteri
     public ArrayList<String> getAllAnswers() {
         return allAnswers;
     }
 
-    //3.setteri nevajag, jo arraylists tiks automātiski ģenerēts no jau dotiem nosaukumiem
+    public int getRightGuessesCount() {
+        return rightGuessesCount;
+    }
+
+    //3.setteri nevajag
+    public void setRightGuessesCount(int inputRightGuessesCount){
+        rightGuessesCount = inputRightGuessesCount;
+    }
 
     //4.Konstruktori, neūs defaultais konstruktors
-    public GameFlags(int inputGuessesCount, ArrayList<String> inputAllGuesses, boolean inputWinOrNot,Player inputPlayer, ArrayList<String> inputAllAnswers){
-        super(inputGuessesCount,inputAllGuesses,inputWinOrNot, inputPlayer);
+    public GameFlags(ArrayList<String> inputAllGuesses, boolean inputWinOrNot,Player inputPlayer,
+                     ArrayList<String> inputAllAnswers, int inputRightGuessesCount){
+        super(inputAllGuesses,inputWinOrNot, inputPlayer);
         allAnswers = inputAllAnswers;
+        rightGuessesCount = inputRightGuessesCount;
     }
 
     //5.toString
     public String toString(){
-        String result = "Players ==> " + super.getPlayer().getName() + " All guesses ==> "+ super.getAllGuesses()
+        String result = "FLAGS: Players ==> " + super.getPlayer().getName() + "Correct answers ==> " + rightGuessesCount
+                + " All guesses ==> "+ super.getAllGuesses()
                 + " All answers ==> "+ allAnswers.toString();
         return result;
     }

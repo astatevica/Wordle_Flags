@@ -25,15 +25,15 @@ public class GameMemory extends Game{
         setTurns(0);
     }
 
-    public GameMemory(int inputGuessesCount, ArrayList<String> inputAllGuesses,
+    public GameMemory(ArrayList<String> inputAllGuesses,
                       boolean inputWinOrNot, Player inputPlayer, int inputTurns){
-        super(inputGuessesCount,inputAllGuesses,inputWinOrNot,inputPlayer);
+        super(inputAllGuesses,inputWinOrNot,inputPlayer);
         setTurns(inputTurns);
     }
 
     //toString
     public String toString(){
-        String result = "Turns: " + turns + super.toString();
+        String result = "MEMORY: Turns: " + turns + super.toString();
         return result;
     }
 }

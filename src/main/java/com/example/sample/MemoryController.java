@@ -15,10 +15,15 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class MemoryController extends Thread{
@@ -61,12 +66,6 @@ public class MemoryController extends Thread{
 
 
     public void initialize(){
-        doneButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                DBUtils.changeScene(event, "logged-in.fxml","Welcome!",null);
-            }
-        });
     	timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(1), event -> {
 			
             clickedOnButtonsBttn.get(0).setDisable(false);
@@ -158,10 +157,19 @@ public class MemoryController extends Thread{
 
     }
 
+    private Stage primaryStage;
+    private Scene scene;
+    private Parent root;
 
     @FXML
     public void doneGame(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("logged-in.fxml"));
+        primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
+
     @FXML
     public void forfeitGame(ActionEvent event) throws IOException{
         doneButton.setDisable(false);
@@ -170,6 +178,8 @@ public class MemoryController extends Thread{
         for(int i = 0; i < allButtons.size(); i++){
             allButtons.get(i).setDisable(true);
         }
+
+        SignUpController.makeGameMemoryObject(null,false,(int)turns);
     }
 
 
@@ -234,6 +244,7 @@ public class MemoryController extends Thread{
                 if(pairsLeft == 0){
                     forfeitButton.setDisable(true);
                     doneButton.setDisable(false);
+                    SignUpController.makeGameMemoryObject(null,true,(int)turns);
                 }
 
                 clickedOnButtonsInt.remove(0);

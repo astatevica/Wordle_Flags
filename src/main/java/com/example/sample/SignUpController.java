@@ -1,8 +1,6 @@
 package com.example.sample;
 
-import Model.Game;
-import Model.GameFlags;
-import Model.Player;
+import Model.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -84,16 +82,31 @@ public class SignUpController implements Initializable {
     //Papildus funkcijas
 
     //Funkcija, lai varētu izveidot Game objektu
-    public static void makeGameObject(int inputGuessesCount, ArrayList<String> inputAllGuesses, boolean inputWinOrNot){
-        Game game = new Game(inputGuessesCount, inputAllGuesses, inputWinOrNot, player);
+    public static void makeGameObject(ArrayList<String> inputAllGuesses, boolean inputWinOrNot){
+        Game game = new Game(inputAllGuesses, inputWinOrNot, player);
         System.out.println(game);
     }
 
-    //Funkcija, lai varētu izveidot GameFlags objektu
-    public static void makeGameFlagObject(int inputGuessesCount, ArrayList<String> inputAllGuesses,
-                                          boolean inputWinOrNot, ArrayList<String> inputAllAnswers){
-        GameFlags gameFlags = new GameFlags(inputGuessesCount, inputAllGuesses, inputWinOrNot, player,inputAllAnswers);
+    //Funkcija, lai izveido GameFlags objektu
+    public static void makeGameFlagObject(ArrayList<String> inputAllGuesses,
+                                          boolean inputWinOrNot, ArrayList<String> inputAllAnswers, int inputGuessesCount){
+        GameFlags gameFlags = new GameFlags(inputAllGuesses, inputWinOrNot, player,inputAllAnswers, inputGuessesCount);
         System.out.println(gameFlags);
+    }
+
+    //Funkcija, lai izveido GameWordle objektu
+    public static void makeGameWordleObject(ArrayList<String> inputAllGuesses,boolean inputWinOrNot,
+                                            int inputLevel, String inputSecretWord, int inputGuessesCount){
+        GameWordle gameWordle = new GameWordle(inputAllGuesses,inputWinOrNot,player,
+                inputLevel,inputSecretWord,inputGuessesCount);
+        System.out.println(gameWordle);
+    }
+
+    //Funkcija, lai izveido GameMemory objektu
+    public static void makeGameMemoryObject(ArrayList<String> inputAllGuesses,
+                                            boolean inputWinOrNot, int inputTurns){
+        GameMemory gameMemory = new GameMemory(inputAllGuesses, inputWinOrNot, player, inputTurns);
+        System.out.println(gameMemory);
     }
 
 

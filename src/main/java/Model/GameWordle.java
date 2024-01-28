@@ -7,6 +7,7 @@ public class GameWordle extends Game{
     //variable
     private int level;
     private String secretWord;
+    private int guessesCount;
 
     //getters
     public int getLevel() {
@@ -15,6 +16,10 @@ public class GameWordle extends Game{
 
     public String getSecretWord() {
         return secretWord;
+    }
+
+    public int getGuessesCount() {
+        return guessesCount;
     }
 
     //setters
@@ -34,23 +39,30 @@ public class GameWordle extends Game{
         }
     }
 
+    public void setGuessesCount(int inputGuessesCount){
+        guessesCount = inputGuessesCount;
+    }
+
     //constructors
     public GameWordle(){
         super();
         setLevel(1);
         setSecretWord("APPLE");
+        guessesCount = 0;
     }
 
-    public GameWordle(int inputGuessesCount, ArrayList<String> inputAllGuesses,
-                      boolean inputWinOrNot, Player inputPlayer, int inputLevel, String inputSecretWord){
-        super(inputGuessesCount,inputAllGuesses,inputWinOrNot,inputPlayer);
+    public GameWordle(ArrayList<String> inputAllGuesses,boolean inputWinOrNot, Player inputPlayer,
+                      int inputLevel, String inputSecretWord, int inputGuessesCount){
+        super(inputAllGuesses,inputWinOrNot,inputPlayer);
         setLevel(inputLevel);
         setSecretWord(inputSecretWord);
+        setGuessesCount(inputGuessesCount);
     }
 
     //toString
     public String toString(){
-        String result = "Level: " + level + " Secret word: " + secretWord + super.toString();
+        String result = "WORDLE: Level: " + level + " Secret word: " + secretWord + " Guesses count: " + guessesCount
+                + super.toString();
         return result;
     }
 }

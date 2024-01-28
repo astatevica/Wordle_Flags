@@ -24,7 +24,7 @@ public class TestMain {
         testGuesses.add("SOUP");
         testGuesses.add("CAMP");
         testGuesses.add("CAKE");
-        Game game1 = new Game(guesses, testGuesses, true, player1);
+        Game game1 = new Game(testGuesses, true, player1);
         System.out.println(game1);
 
 
@@ -52,7 +52,7 @@ public class TestMain {
         testGuesses1.add("Bosnia");
         testGuesses1.add("Latvia");
         testGuesses1.add("Estonia");
-        GameFlags gameFlags1 = new GameFlags(8, testGuesses1,true,player2, testAnswers1);
+        GameFlags gameFlags1 = new GameFlags(testGuesses1,true,player2, testAnswers1, 8);
         System.out.println(gameFlags1);
 
         System.out.println("--TEST-GAME-FLAGS-FUNCTIONS-CLASS-------------------------------");
@@ -68,7 +68,7 @@ public class TestMain {
         testGuesses2.add("GOOSE");
         testGuesses2.add("HIGHT");
         testGuesses2.add("LAKES");
-        GameWordle gameWordle1 = new GameWordle(4, testGuesses2, false, player3, 1, "HOUSE");
+        GameWordle gameWordle1 = new GameWordle(testGuesses2, false, player3, 1, "HOUSE", 4);
         System.out.println(gameWordle1);
 
 

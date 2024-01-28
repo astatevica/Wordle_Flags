@@ -42,6 +42,8 @@ public class LevelController {
     private static int lives;
     private static ArrayList<Character> greenLetters;
 
+    ArrayList<String> allGuesses;
+
 
     @FXML   
     private Label wordleLable1, levelLable1, enterWordLabel1, resultMessage1, resultMessage11;
@@ -86,10 +88,14 @@ public class LevelController {
     Dictionary<Character, ArrayList<String>> imageDict = new Hashtable<>();
 
     String userGuess;
-
+    int levelForClass;
+    boolean winOrNot;
 
     @FXML
-    public void initialize(String level){  
+    public void initialize(String level){
+        allGuesses = new ArrayList<String>();
+        winOrNot = false;
+        levelForClass = Character.getNumericValue(level.charAt(6));
 
         Random rand = new Random();
 
@@ -213,17 +219,19 @@ public class LevelController {
     //Submit answer button
     @FXML
     public void submitAnswer1(ActionEvent event) {
-
         userGuess = answerBox1.getText().toUpperCase();
 
         //Stops user from being able to use some buttons after winning
         if(userGuess.equals(secretWord)){
+            allGuesses.add(userGuess);
             disableThings();
             displayResultLabels(userGuess);
+            SignUpController.makeGameWordleObject(allGuesses,winOrNot,levelForClass,secretWord,(6-lives));
         }
 
         //If correct user input then go through to the letter check
         if (userGuess.length() == secretWord.length()){
+            allGuesses.add(userGuess);
             answerBox1.clear();
             checkGuess1(userGuess, secretWord);
             lives -= 1;
@@ -232,6 +240,8 @@ public class LevelController {
         if (lives == 0){
             disableThings();
             displayResultLabels(userGuess);
+            SignUpController.makeGameWordleObject(allGuesses,winOrNot,levelForClass,secretWord,(6-lives));
+            System.out.println(allGuesses.toString());
         }
 
     }
@@ -263,6 +273,7 @@ public class LevelController {
         lives = 0;
         disableThings();
         displayResultLabels("XXXXX");
+        SignUpController.makeGameWordleObject(allGuesses,winOrNot,levelForClass,secretWord,(6-lives));
     }
 
 

@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class Game{
     //Mainigie
-    private int guessesCount;
     private boolean winOrNot;
     private LocalDateTime date;
     private ArrayList<String> allGuesses;
@@ -15,10 +14,6 @@ public class Game{
     public ArrayList<String> testArrayList = new ArrayList<>();
 
     //Getters
-    public int getGuessesCount() {
-        return guessesCount;
-    }
-
     public boolean isWinOrNot() {
         return winOrNot;
     }
@@ -36,13 +31,6 @@ public class Game{
     }
 
     //Setteri
-    public void setGuessesCount(int inputGuessesCount){
-        if(inputGuessesCount >= 1){
-            guessesCount = inputGuessesCount;
-        }else{
-            guessesCount = 0;
-        }
-    }
 
     public void setAllGuesses(ArrayList<String> inputAllGuesses){
         //šeit nepārbudam, jo piemēra spēlē "Memory" nebūs minējumu
@@ -67,15 +55,13 @@ public class Game{
 
     //Konstruktori
     public Game(){
-        setGuessesCount(0);
         setAllGuesses(testArrayList);
         setWinOrNot(true);
         setLocalDateTime();
         setPlayer(new Player());
     }
 
-    public Game(int inputGuessesCount, ArrayList<String> inputAllGuesses, boolean inputWinOrNot, Player inputPlayer){
-        setGuessesCount(inputGuessesCount);
+    public Game(ArrayList<String> inputAllGuesses, boolean inputWinOrNot, Player inputPlayer){
         setAllGuesses(inputAllGuesses);
         setWinOrNot(inputWinOrNot);
         setLocalDateTime();
@@ -84,7 +70,7 @@ public class Game{
 
     //toString
     public String toString(){
-        String result = "Game result ==> Player: " + player.getName() + " Guesses count: " + guessesCount + " All Guesses: " +
+        String result = " Game result ==> Player: " + player.getName() + " All Guesses: " +
                 allGuesses + " Round is won: " + winOrNot + " Date: " + date;
         return result;
     }

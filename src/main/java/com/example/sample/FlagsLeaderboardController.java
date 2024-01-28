@@ -39,7 +39,7 @@ public class FlagsLeaderboardController implements Initializable{
             ResultSet getUsername = dbGet.executeQuery("SELECT username from history order by RegTime desc limit 1");
             while (getUsername.next()) {
                 String username = getUsername.getString("username");
-                System.out.println(username);
+                //System.out.println(username);
 
                 //izņemu pēdējos 5 spēļu rezultātu datus no DB
                 //label1
@@ -50,7 +50,7 @@ public class FlagsLeaderboardController implements Initializable{
                         "limit 1");
                 while (lastTime1.next()){
                     time1 = lastTime1.getString("time").trim();
-                    System.out.println(time1);
+                    //System.out.println(time1);
                     if(time1 != null) {
                         lb_time1.setText(time1);
 
@@ -62,7 +62,7 @@ public class FlagsLeaderboardController implements Initializable{
                                 "limit 1");
                         while (lastScores1.next()) {
                             String score1 = lastScores1.getString("score").trim();
-                            System.out.println(score1);
+                            //System.out.println(score1);
                             lb_score1.setText(score1 + "/10");
                         }
                     }else{
@@ -79,7 +79,7 @@ public class FlagsLeaderboardController implements Initializable{
                         "limit 2");
                 while (lastTime2.next()){
                     time2 = lastTime2.getString("time").trim();
-                    System.out.println(time2);
+                    //System.out.println(time2);
 
                     if(!(time2.equals(time1))) {
                         lb_time2.setText(time2);
@@ -91,7 +91,7 @@ public class FlagsLeaderboardController implements Initializable{
                                 "limit 2");
                         while (lastScores2.next()) {
                             String score2 = lastScores2.getString("score").trim();
-                            System.out.println(score2);
+                            //System.out.println(score2);
                             lb_score2.setText(score2 + "/10");
                         }
                     }else{
@@ -108,7 +108,7 @@ public class FlagsLeaderboardController implements Initializable{
                         "limit 3");
                 while (lastTime3.next()){
                     time3 = lastTime3.getString("time").trim();
-                    System.out.println(time3);
+                    //System.out.println(time3);
                     if(!(time3.equals(time2))) {
                         lb_time3.setText(time3);
 
@@ -119,7 +119,7 @@ public class FlagsLeaderboardController implements Initializable{
                                 "limit 3");
                         while (lastScores3.next()) {
                             String score3 = lastScores3.getString("score").trim();
-                            System.out.println(score3);
+                            //System.out.println(score3);
                             lb_score3.setText(score3 + "/10");
                         }
                     }else{
@@ -136,7 +136,7 @@ public class FlagsLeaderboardController implements Initializable{
                         "limit 4");
                 while (lastTime4.next()){
                     time4 = lastTime4.getString("time").trim();
-                    System.out.println(time4);
+                    //System.out.println(time4);
                     if(!time4.equals(time3)) {
                         lb_time4.setText(time4);
 
@@ -147,7 +147,7 @@ public class FlagsLeaderboardController implements Initializable{
                                 "limit 4");
                         while (lastScores4.next()) {
                             String score4 = lastScores4.getString("score").trim();
-                            System.out.println(score4);
+                            //System.out.println(score4);
                             lb_score4.setText(score4 + "/10");
                         }
                     }else{
@@ -164,7 +164,7 @@ public class FlagsLeaderboardController implements Initializable{
                         "limit 5");
                 while (lastTime5.next()){
                     time5 = lastTime5.getString("time").trim();
-                    System.out.println(time5);
+                    //System.out.println(time5);
                     if(!time4.equals(time3)) {
                         lb_time5.setText(time5);
 
@@ -175,7 +175,7 @@ public class FlagsLeaderboardController implements Initializable{
                                 "limit 5");
                         while (lastScores5.next()) {
                             String score5 = lastScores5.getString("score").trim();
-                            System.out.println(score5);
+                            //System.out.println(score5);
                             lb_score5.setText(score5 + "/10");
                         }
                     }else{
