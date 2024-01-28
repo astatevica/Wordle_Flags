@@ -30,19 +30,7 @@ public class FlagGameController implements Initializable {
     private Label label_score;
 
     @FXML
-    private Button button_1;
-
-    @FXML
-    private Button button_2;
-
-    @FXML
-    private Button button_3;
-
-    @FXML
-    private Button button_return;
-
-    @FXML
-    private Button button_play;
+    private Button button_1, button_2, button_3, button_return, button_play;
 
 
     //Nepieciešamie mainīgie
@@ -141,9 +129,6 @@ public class FlagGameController implements Initializable {
 
         //Parādu rezultātu
         }else{
-            //TODO nepieciešams pabeigt
-            //saveResultsInDB(score);
-
             //Izveido objektus
             SignUpController.makeGameObject(score,allGuesses,true);
             SignUpController.makeGameFlagObject(score,allGuesses,true,allAnswers);

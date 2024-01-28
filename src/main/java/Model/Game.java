@@ -45,11 +45,8 @@ public class Game{
     }
 
     public void setAllGuesses(ArrayList<String> inputAllGuesses){
-        if(inputAllGuesses != null){
-            allGuesses = inputAllGuesses;
-        }else{
-            allGuesses.add("NULL");
-        }
+        //šeit nepārbudam, jo piemēra spēlē "Memory" nebūs minējumu
+        allGuesses = inputAllGuesses;
     }
 
     public void setWinOrNot(boolean inputWinOrNot){
