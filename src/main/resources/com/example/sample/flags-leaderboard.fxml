@@ -20,7 +20,7 @@
             <Font name="Comic Sans MS Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lb_scoresFromDB" layoutX="87.0" layoutY="132.0" prefHeight="183.0" prefWidth="217.0" style="-fx-background-color: #be6ff7;" text="Scores from DB">
+      <Label fx:id="lb_score1" layoutX="87.0" layoutY="132.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #be6ff7;" wrapText="true">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font>
@@ -30,7 +30,47 @@
             <Font name="Comic Sans MS Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lb_timesFromDB" layoutX="305.0" layoutY="132.0" prefHeight="183.0" prefWidth="218.0" style="-fx-background-color: #dda1ff;" text="Times from DB">
+      <Label fx:id="lb_time1" layoutX="305.0" layoutY="132.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #dda1ff;" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_score2" layoutX="87.0" layoutY="177.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #be6ff7;" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_score3" layoutX="87.0" layoutY="225.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #be6ff7;" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_score4" layoutX="87.0" layoutY="272.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #be6ff7;" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_score5" layoutX="87.0" layoutY="318.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #be6ff7;" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_time2" layoutX="305.0" layoutY="177.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #dda1ff;" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_time3" layoutX="305.0" layoutY="225.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #dda1ff;" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_time4" layoutX="305.0" layoutY="272.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #dda1ff;" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_time5" layoutX="305.0" layoutY="318.0" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #dda1ff;" wrapText="true">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font>

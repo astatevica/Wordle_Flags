@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.LoggedInController">
     <children>
-        <Label fx:id="lable_welcome" layoutX="170.0" layoutY="54.0" prefHeight="70.0" prefWidth="276.0" text="Choose game!" textAlignment="RIGHT" textFill="#6a99f7" wrapText="true">
+        <Label fx:id="lable_welcome" layoutX="173.0" layoutY="30.0" prefHeight="70.0" prefWidth="382.0" text="Choose game!" textAlignment="RIGHT" textFill="#6a99f7" wrapText="true">
             <font>
                 <Font name="Comic Sans MS Bold" size="36.0" />
             </font>
