@@ -60,33 +60,39 @@
             </ImageView>
          </children>
       </HBox>
-      <Label fx:id="levelLabel1" layoutX="395.0" layoutY="30.0" prefHeight="37.0" prefWidth="75.0" text="Level 2" textFill="WHITE">
+      <Label fx:id="levelLabel1" layoutX="403.0" layoutY="28.0" prefHeight="38.0" prefWidth="90.0" text="Level 2" textFill="WHITE">
          <font>
-            <Font size="24.0" />
+            <Font name="Comic Sans MS" size="24.0" />
          </font>
       </Label>
       <Label fx:id="wordleLabel1" layoutX="312.0" layoutY="30.0" prefHeight="35.0" prefWidth="83.0" text="Wordle" textFill="WHITE">
          <font>
-            <Font size="24.0" />
+            <Font name="Comic Sans MS" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="doneGameButton1" layoutX="379.0" layoutY="595.0" mnemonicParsing="false" onAction="#doneGame1" text="DONE">
+      <Button fx:id="doneGameButton1" layoutX="379.0" layoutY="595.0" mnemonicParsing="false" onAction="#doneGame1" style="-fx-background-color: #8328CC;" text="DONE" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Label fx:id="enterWordLabel1" layoutX="228.0" layoutY="60.0" prefHeight="35.0" prefWidth="100.0" text="Enter Word:" textFill="WHITE">
+         </cursor>
          <font>
-            <Font size="18.0" />
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Label fx:id="enterWordLabel1" layoutX="216.0" layoutY="60.0" prefHeight="35.0" prefWidth="112.0" text="Enter Word:" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Label>
       <TextField fx:id="answerBox1" layoutX="325.0" layoutY="65.0" prefHeight="25.0" prefWidth="174.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
-      <Button fx:id="submitButton1" layoutX="499.0" layoutY="65.0" mnemonicParsing="false" onAction="#submitAnswer1" text="SUBMIT">
+      <Button fx:id="submitButton1" layoutX="499.0" layoutY="65.0" mnemonicParsing="false" onAction="#submitAnswer1" style="-fx-background-color: #8328CC;" text="SUBMIT" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></Button>
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
       <HBox layoutX="186.0" layoutY="167.0" prefHeight="59.0" prefWidth="783.0">
          <children>
             <ImageView fx:id="word2Letter1" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
@@ -349,16 +355,19 @@
       </HBox>
       <Label fx:id="resultMessage1" alignment="CENTER" layoutX="294.0" layoutY="527.0" prefHeight="19.0" prefWidth="217.0" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font size="20.0" />
+            <Font name="Comic Sans MS" size="20.0" />
          </font>
       </Label>
-      <Button fx:id="forfeitButton1" layoutX="742.0" layoutY="595.0" mnemonicParsing="false" onAction="#forfeit1" prefHeight="25.0" prefWidth="64.0" text="FORFEIT">
+      <Button fx:id="forfeitButton1" layoutX="742.0" layoutY="595.0" mnemonicParsing="false" onAction="#forfeit1" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #8328CC;" text="FORFEIT" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></Button>
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font></Button>
       <Label fx:id="resultMessage11" alignment="CENTER" layoutX="294.0" layoutY="557.0" prefHeight="19.0" prefWidth="217.0" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font size="20.0" />
+            <Font name="Comic Sans MS" size="20.0" />
          </font>
       </Label>
       <HBox prefHeight="37.0" prefWidth="815.0">
