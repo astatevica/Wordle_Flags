@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.MemoryController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="333.0" layoutY="1.0" prefHeight="42.0" prefWidth="145.0" text="Memory">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox layoutX="30.0" layoutY="43.0" prefHeight="75.0" prefWidth="764.0">
+         <children>
+            <Button fx:id="memoryButton1" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn1" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton2" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn2" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton3" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn3" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton4" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn4" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton5" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn5" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton6" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn6" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton7" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn7" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton8" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn8" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton9" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn9" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton10" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn10" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="118.0" prefHeight="75.0" prefWidth="764.0">
+         <children>
+            <Button fx:id="memoryButton11" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn11" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton12" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn12" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton13" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn13" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton14" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn14" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton15" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn15" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton16" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn16" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton17" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn17" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton18" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn18" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton19" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn19" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton20" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn20" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="193.0" prefHeight="75.0" prefWidth="764.0">
+         <children>
+            <Button fx:id="memoryButton21" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn21" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton22" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn22" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton23" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn23" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton24" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn24" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton25" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn25" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton26" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn26" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton27" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn27" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton28" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn28" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton29" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn29" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton30" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn30" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="268.0" prefHeight="75.0" prefWidth="764.0">
+         <children>
+            <Button fx:id="memoryButton31" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn31" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton32" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn32" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton33" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn33" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton34" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn34" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton35" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn35" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton36" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn36" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton37" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn37" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton38" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn38" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton39" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn39" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton40" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn40" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="343.0" prefHeight="75.0" prefWidth="764.0">
+         <children>
+            <Button fx:id="memoryButton41" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn41" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton42" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn42" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton43" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn43" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton44" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn44" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton45" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn45" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton46" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn46" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton47" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn47" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton48" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn48" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton49" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn49" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton50" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn50" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="418.0" prefHeight="75.0" prefWidth="764.0">
+         <children>
+            <Button fx:id="memoryButton51" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn51" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton52" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn52" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton53" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn53" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton54" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn54" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton55" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn55" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton56" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn56" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton57" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn57" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton58" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn58" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton59" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn59" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton60" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn60" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="493.0" prefHeight="75.0" prefWidth="764.0">
+         <children>
+            <Button fx:id="memoryButton61" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn61" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton62" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn62" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton63" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn63" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton64" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn64" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton65" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn65" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton66" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn66" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton67" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn67" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton68" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn68" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton69" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn69" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="memoryButton70" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="75.0" prefWidth="75.0">
+               <graphic>
+                  <ImageView fx:id="imageViewBttn70" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+         </children>
+      </HBox>
+      <Button fx:id="doneButton" layoutX="378.0" layoutY="624.0" mnemonicParsing="false" onAction="#doneGame" prefHeight="19.0" prefWidth="52.0" text="DONE" />
+      <Button fx:id="forfeitButton" layoutX="754.0" layoutY="624.0" mnemonicParsing="false" onAction="#forfeitGame" text="Forfeit" />
+      <Label fx:id="turnLabel" layoutX="330.0" layoutY="568.0" prefHeight="57.0" prefWidth="152.0" text="Turns: 0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

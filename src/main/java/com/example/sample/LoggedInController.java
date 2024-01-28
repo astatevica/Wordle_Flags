@@ -25,13 +25,19 @@ public class LoggedInController implements Initializable {
     private Button button_wordle;
 
     @FXML
-    private  Button button_flags;
+    private Button button_flags;
+
+    @FXML
+    private Button button_memory;
 
     @FXML
     private ImageView im_wordle;
 
     @FXML
     private ImageView im_flags;
+
+    @FXML
+    private ImageView im_memory;
 
 
     @Override
@@ -49,7 +55,7 @@ public class LoggedInController implements Initializable {
         button_flags.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                DBUtils.changeScene(event, "flags.fxml", "Flag game!", null);
+                DBUtils.changeScene(event, "flags.fxml", "Flags", null);
             }
         });
 
@@ -61,9 +67,18 @@ public class LoggedInController implements Initializable {
             }
         });
 
+        //Pārslēdzu skatu no logged-in to Memory
+        button_memory.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                DBUtils.changeScene(event, "Memory.fxml", "Memory", null);
+            }
+        });
+
         //Ieldēju fxml failā spēļu bildes
         loadPicture("flag_game",im_flags);
         loadPicture("wordle_game",im_wordle);
+        loadPicture("memory_game",im_memory);
 
         //Label pārsaucu
         lable_welcome.setText("Choose game!");

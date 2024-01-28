@@ -18,6 +18,7 @@ public class LevelSelectorController{
     private Stage primaryStage;
     private Scene scene;
     private Parent root;
+    @FXML
     private AnchorPane levelSelectorPane;
 
     @FXML

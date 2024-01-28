@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="levelSelectorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="515.0" style="-fx-background-color: #1b0236;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.LevelSelectorController">
+<AnchorPane fx:id="levelSelectorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="600.0" style="-fx-background-color: #1b0236;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.LevelSelectorController">
    <children>
-      <Button fx:id="buttonLVL1" layoutX="138.0" layoutY="156.0" mnemonicParsing="false" onAction="#openLevel1" prefHeight="31.0" prefWidth="233.0" style="-fx-background-color: #8328CC;" text="LEVEL 1" textFill="WHITE">
+      <Button fx:id="buttonLVL1" layoutX="107.0" layoutY="119.0" mnemonicParsing="false" onAction="#openLevel1" prefHeight="50.0" prefWidth="374.0" style="-fx-background-color: #8328CC;" text="LEVEL 1" textFill="WHITE">
          <font>
-            <Font size="14.0" />
+            <Font name="Comic Sans MS" size="24.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -19,30 +19,33 @@
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="buttonLVL2" layoutX="137.0" layoutY="200.0" mnemonicParsing="false" onAction="#openLevel2" prefHeight="31.0" prefWidth="234.0" style="-fx-background-color: #8328CC;" text="LEVEL 2" textFill="WHITE">
+      <Button fx:id="buttonLVL2" layoutX="107.0" layoutY="191.0" mnemonicParsing="false" onAction="#openLevel2" prefHeight="51.0" prefWidth="374.0" style="-fx-background-color: #8328CC;" text="LEVEL 2" textFill="WHITE">
          <font>
-            <Font size="14.0" />
+            <Font name="Comic Sans MS" size="24.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="buttonLVL3" layoutX="137.0" layoutY="244.0" mnemonicParsing="false" onAction="#openLevel3" prefHeight="31.0" prefWidth="234.0" style="-fx-background-color: #8328CC;" text="LEVEL 3" textFill="WHITE">
+      <Button fx:id="buttonLVL3" layoutX="107.0" layoutY="263.0" mnemonicParsing="false" onAction="#openLevel3" prefHeight="51.0" prefWidth="374.0" style="-fx-background-color: #8328CC;" text="LEVEL 3" textFill="WHITE">
          <font>
-            <Font size="14.0" />
+            <Font name="Comic Sans MS" size="24.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="backLevelSelectorButton" layoutX="227.0" layoutY="307.0" mnemonicParsing="false" onAction="#backLevelSelector" prefHeight="31.0" prefWidth="53.0" style="-fx-background-color: #8328CC;" text="BACK" textFill="WHITE">
+      <Button fx:id="backLevelSelectorButton" layoutX="255.0" layoutY="358.0" mnemonicParsing="false" onAction="#backLevelSelector" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: #8328CC;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label alignment="TOP_CENTER" layoutX="171.0" layoutY="70.0" prefHeight="72.0" prefWidth="168.0" text="Wordle" textFill="WHITE">
+      <Label alignment="TOP_CENTER" layoutX="168.0" layoutY="14.0" prefHeight="48.0" prefWidth="252.0" text="Wordle" textFill="WHITE">
          <font>
-            <Font size="18.0" />
+            <Font name="Comic Sans MS" size="48.0" />
          </font>
       </Label>
    </children>

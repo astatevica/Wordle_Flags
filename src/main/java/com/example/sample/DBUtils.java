@@ -218,7 +218,6 @@ public class DBUtils {
 
         Timestamp time = Timestamp.valueOf(LocalDateTime.now());
 
-        //pagaidām pamēģinu tikai score ivadīt
         try{
             //izveido savienojumu ar datu bāzi
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/wordle_2023","root","edann130822");

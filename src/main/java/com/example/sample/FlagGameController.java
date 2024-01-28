@@ -59,7 +59,7 @@ public class FlagGameController implements Initializable {
         button_return.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                DBUtils.changeScene(event,"logged-in.fxml","Log in!", null);
+                DBUtils.changeScene(event,"logged-in.fxml","Welcome!", null);
             }
         });
 
