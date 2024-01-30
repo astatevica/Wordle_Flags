@@ -82,21 +82,21 @@ public class SignUpController implements Initializable {
 
     //Funkcija, lai varētu izveidot Game objektu
     public static void makeGameObject(ArrayList<String> inputAllGuesses, boolean inputWinOrNot){
-        Game game = new Game(inputAllGuesses, inputWinOrNot, SignUpController.player);
+        Game game = new Game(inputAllGuesses, inputWinOrNot, player);
         System.out.println(game);
     }
 
     //Funkcija, lai izveido GameFlags objektu
     public static void makeGameFlagObject(ArrayList<String> inputAllGuesses,
                                           boolean inputWinOrNot, ArrayList<String> inputAllAnswers, int inputGuessesCount){
-        GameFlags gameFlags = new GameFlags(inputAllGuesses, inputWinOrNot, SignUpController.player,inputAllAnswers, inputGuessesCount);
+        GameFlags gameFlags = new GameFlags(inputAllGuesses, inputWinOrNot, player,inputAllAnswers, inputGuessesCount);
         System.out.println(gameFlags);
     }
 
     //Funkcija, lai izveido GameWordle objektu
     public static void makeGameWordleObject(ArrayList<String> inputAllGuesses,boolean inputWinOrNot,
                                             int inputLevel, String inputSecretWord, int inputGuessesCount){
-        GameWordle gameWordle = new GameWordle(inputAllGuesses,inputWinOrNot,SignUpController.player,
+        GameWordle gameWordle = new GameWordle(inputAllGuesses,inputWinOrNot,player,
                 inputLevel,inputSecretWord,inputGuessesCount);
         System.out.println(gameWordle);
     }

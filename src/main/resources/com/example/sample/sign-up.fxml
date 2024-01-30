@@ -40,7 +40,7 @@
                         <Font name="Comic Sans MS" size="14.0" />
                     </font>
                 </Label>
-                <Button fx:id="button_login" layoutX="327.0" layoutY="234.0" mnemonicParsing="false" style="-fx-background-color: transperent; -fx-cursor: hand;" text="Log In!" textFill="#699af5" underline="true">
+                <Button fx:id="button_login" layoutX="327.0" layoutY="234.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-cursor: hand;" text="Log In!" textFill="#699af5" underline="true">
                     <font>
                         <Font name="Comic Sans MS" size="14.0" />
                     </font>

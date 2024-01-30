@@ -137,7 +137,7 @@ public class DBUtils {
             }else{
                 while(resultSet.next()){
                     String retrievedPassword = resultSet.getString("password");
-                    String retrievedEmail = resultSet.getString("email");
+                    //String retrievedEmail = resultSet.getString("email");
                     if(retrievedPassword.equals(password)){
                         changeScene(event,"logged-in.fxml","Welcome!", username);
                     }else{
