@@ -70,7 +70,8 @@ public class Game{
 
     //toString
     public String toString(){
-        String result = " Game result ==> Player: " + player.getName() + " All Guesses: " +
+        System.out.println("------------------------------------------------------------");
+        String result = "GAME result ==> Player: " + player.getName() + " All Guesses: " +
                 allGuesses + " Round is won: " + winOrNot + " Date: " + date;
         return result;
     }

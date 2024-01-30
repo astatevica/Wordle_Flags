@@ -64,6 +64,7 @@ public class Player {
 
     //ToString
     public String toString(){
+        System.out.println("------------------------------------------------------------");
         String result = "Username: " + getName() + " Email: " + getEmail() + " Password: " + getPassword();
         return result;
     }

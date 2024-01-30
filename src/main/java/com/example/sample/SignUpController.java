@@ -49,6 +49,9 @@ public class SignUpController implements Initializable {
                     if((pf_password.getText().trim().equals(pf_confirm_password.getText().trim()))) {
                         DBUtils.signUpUser(event, tf_username.getText(), pf_password.getText(), tf_email.getText());
                         DBUtils.registerHistory(tf_username.getText());
+                        //izveido player objektu
+                        player = new Player(tf_username.getText(),tf_email.getText(),pf_password.getText());
+                        System.out.println(player);
                     }else{
                         System.out.println("Password does not match!");
                         Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
@@ -72,10 +75,6 @@ public class SignUpController implements Initializable {
             }
         });
 
-        //izveido player objektu
-        player = new Player(tf_username.getText(),tf_email.getText(),pf_password.getText());
-        System.out.println(player);
-
     }
 
 
@@ -83,21 +82,21 @@ public class SignUpController implements Initializable {
 
     //Funkcija, lai varētu izveidot Game objektu
     public static void makeGameObject(ArrayList<String> inputAllGuesses, boolean inputWinOrNot){
-        Game game = new Game(inputAllGuesses, inputWinOrNot, player);
+        Game game = new Game(inputAllGuesses, inputWinOrNot, SignUpController.player);
         System.out.println(game);
     }
 
     //Funkcija, lai izveido GameFlags objektu
     public static void makeGameFlagObject(ArrayList<String> inputAllGuesses,
                                           boolean inputWinOrNot, ArrayList<String> inputAllAnswers, int inputGuessesCount){
-        GameFlags gameFlags = new GameFlags(inputAllGuesses, inputWinOrNot, player,inputAllAnswers, inputGuessesCount);
+        GameFlags gameFlags = new GameFlags(inputAllGuesses, inputWinOrNot, SignUpController.player,inputAllAnswers, inputGuessesCount);
         System.out.println(gameFlags);
     }
 
     //Funkcija, lai izveido GameWordle objektu
     public static void makeGameWordleObject(ArrayList<String> inputAllGuesses,boolean inputWinOrNot,
                                             int inputLevel, String inputSecretWord, int inputGuessesCount){
-        GameWordle gameWordle = new GameWordle(inputAllGuesses,inputWinOrNot,player,
+        GameWordle gameWordle = new GameWordle(inputAllGuesses,inputWinOrNot,SignUpController.player,
                 inputLevel,inputSecretWord,inputGuessesCount);
         System.out.println(gameWordle);
     }

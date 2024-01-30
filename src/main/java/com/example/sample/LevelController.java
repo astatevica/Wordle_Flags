@@ -230,7 +230,7 @@ public class LevelController {
         }
 
         //If correct user input then go through to the letter check
-        if (userGuess.length() == secretWord.length()){
+        if (userGuess.length() == secretWord.length() && userGuess.matches("[a-zA-Z]{"+ secretWord.length() +"}")){
             allGuesses.add(userGuess);
             answerBox1.clear();
             checkGuess1(userGuess, secretWord);

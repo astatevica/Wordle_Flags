@@ -25,6 +25,7 @@ public class GameFlagFunctions {
 
     //5.toString
     public String toString(){
+        System.out.println("------------------------------------------------------------");
         String result = country.toString();
         return  result;
     }

@@ -2,6 +2,8 @@ package com.example.sample;
 
 import Model.Country;
 import Model.GameFlagFunctions;
+import Model.GameWordle;
+import Model.Player;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

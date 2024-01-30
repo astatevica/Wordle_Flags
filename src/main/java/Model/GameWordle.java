@@ -61,6 +61,7 @@ public class GameWordle extends Game{
 
     //toString
     public String toString(){
+        System.out.println("------------------------------------------------------------");
         String result = "WORDLE: Level: " + level + " Secret word: " + secretWord + " Guesses count: " + guessesCount
                 + super.toString();
         return result;

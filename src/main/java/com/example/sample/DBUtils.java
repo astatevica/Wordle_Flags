@@ -226,7 +226,7 @@ public class DBUtils {
             ResultSet getUsername = dbGet.executeQuery("SELECT username from history order by RegTime desc limit 1");
             while (getUsername.next()) {
                 String username = getUsername.getString("username");
-                System.out.println(username);
+                //System.out.println(username);
                 //ievietoju datus DB
                 psInsert = connection.prepareStatement("INSERT INTO flag_leaderboard (username, score, time) VALUES(?, ?, ?)");
                 psInsert.setString(1,username);

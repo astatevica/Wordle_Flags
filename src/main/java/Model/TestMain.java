@@ -71,6 +71,9 @@ public class TestMain {
         GameWordle gameWordle1 = new GameWordle(testGuesses2, false, player3, 1, "HOUSE", 4);
         System.out.println(gameWordle1);
 
+        System.out.println("--TEST-GAME-MEMORY-CLASS-------------------------------");
+        GameMemory gameMemory1 = new GameMemory(null,true,player1,123);
+        System.out.println(gameMemory1);
 
 
 

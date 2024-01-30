@@ -31,6 +31,7 @@ public class GameFlags extends Game{
 
     //5.toString
     public String toString(){
+        System.out.println("------------------------------------------------------------");
         String result = "FLAGS: Players ==> " + super.getPlayer().getName() + "Correct answers ==> " + rightGuessesCount
                 + " All guesses ==> "+ super.getAllGuesses()
                 + " All answers ==> "+ allAnswers.toString();

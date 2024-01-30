@@ -33,6 +33,7 @@ public class GameMemory extends Game{
 
     //toString
     public String toString(){
+        System.out.println("------------------------------------------------------------");
         String result = "MEMORY: Turns: " + turns + super.toString();
         return result;
     }
